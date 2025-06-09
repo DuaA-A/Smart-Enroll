@@ -11,3 +11,5 @@ Route::post('/check-email', [RegisterController::class, 'checkEmail'])->name('ch
 //Route::post('/check-whatsapp', [RegisterController::class, 'checkWhatsApp'])->name('check.whatsapp');
 Route::get('/welcome/{username}', [RegisterController::class, 'welcome'])->name('welcome');
 Route::resource('/users', UserController::class);
+
+

@@ -52,8 +52,8 @@ public function checkEmail(Request $request)
             'address' => $validated['address'],
             'user_image' => $userImagePath,
         ]);
-
-        Mail::to('admin@example.com')->send(new NewUserRegistered($user));
+ini_set('max_execution_time', 120);
+   Mail::to('20220271@stud.fci-cu.edu.eg')->send(new NewUserRegistered($user->username)); 
         if ($request->input('ajax')) {
             return response()->json([
                 'success' => true,

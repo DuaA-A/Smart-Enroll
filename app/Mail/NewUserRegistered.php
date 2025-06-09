@@ -35,11 +35,12 @@ class NewUserRegistered extends Mailable
      * Get the message content definition.
      */
     public function content(): Content
-    {
-        return new Content(
-            view: 'view.name',
-        );
-    }
+{
+    return new Content(
+        view: 'new_user_registered',
+    );
+}
+
 
     /**
      * Get the attachments for the message.

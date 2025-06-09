@@ -15,18 +15,16 @@ class RegisterController extends Controller
     }
 
     public function checkUsername(Request $request)
-    {
-        $username = $request->input('username');
-        $exists = User::where('username', $username)->exists();
-        return response()->json($exists ? 'taken' : '');
-    }
+{
+    $exists = User::where('username', $request->username)->exists();
+    return response()->json(['exists' => $exists]);
+}
 
-    public function checkEmail(Request $request)
-    {
-        $email = $request->input('email');
-        $exists = User::where('email', $email)->exists();
-        return response()->json($exists ? 'taken' : '');
-    }
+public function checkEmail(Request $request)
+{
+    $exists = User::where('email', $request->email)->exists();
+    return response()->json(['exists' => $exists]);
+}
 
    public function register(Request $request)
     {

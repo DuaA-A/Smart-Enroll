@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: linear-gradient(135deg,#f8c0c8,#efe7d3,#d3bbdd,#ece3f0);
+    background: linear-gradient(135deg, #f8c0c8, #efe7d3, #d3bbdd, #ece3f0);
     /* min-height: 100vh; */
     /* display: flex; */
     /* flex-direction: column; */
@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:2% 10px 80px 10px;
+    padding: 2% 10px 80px 10px;
 }
 
 .container {
@@ -29,7 +29,7 @@ body {
     background: #fff5fa;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     color: #333333;
     /* margin: 20px 0; */
 }
@@ -42,8 +42,7 @@ body {
     color: #a91b60;
 }
 
-
-.details i{
+.details i {
     color: #a91b60;
 }
 .container form .user-details {
@@ -76,27 +75,26 @@ body {
     margin-bottom: 2%;
     color: #555;
 }
-i{
+i {
     margin-left: 6px;
 }
 .user-details .input-box input:focus {
     border-color: #f8c0c8;
     box-shadow: 0 0 5px rgba(248, 192, 200, 0.5);
 }
-button{
+button {
     font-size: 15px;
     background: linear-gradient(135deg, #ebe0d0, #ec9ec0, #ff0080, #a91b60);
     cursor: pointer;
     transition: all 0.3s ease;
     border: none;
-     outline: none;
+    outline: none;
     color: #fff;
     font-weight: 500;
     padding: 10px;
     border-radius: 5px;
     width: 100%;
-    margin-top: 25px ;
-
+    margin-top: 25px;
 }
 
 form .button {
@@ -156,11 +154,12 @@ form .button input:hover {
     font-size: 13px;
     margin-top: 5px;
     height: 14px;
+    margin-bottom: 10px;
 }
-.valid-whatsapp{
-   color: green;
-   font-size: 13px;
-   margin-top: 5px;
+.valid-whatsapp {
+    color: green;
+    font-size: 13px;
+    margin-top: 5px;
 }
 
 @media (max-width: 584px) {
@@ -171,7 +170,7 @@ form .button input:hover {
     .container form .user-details .input-box {
         width: 100%;
     }
-    
+
     .container form .user-details {
         max-height: none;
         overflow-y: visible;

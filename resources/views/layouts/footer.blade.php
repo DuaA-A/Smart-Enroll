@@ -13,7 +13,11 @@
         /* border-top: 10px solid #ffdde1;  */
         font-size: 14px; 
         letter-spacing: 1px; 
+<<<<<<< HEAD
         position: relative;
+=======
+        position: fixed;
+>>>>>>> df64ba6ec4a925cc098f3399af4a9142ccc22ffa
         bottom: 0%;
         border-radius: 70% 70% 0% 0%;
         box-shadow: 20px 2px 20px 2px #880e4f;

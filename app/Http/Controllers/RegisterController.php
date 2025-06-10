@@ -54,6 +54,8 @@ class RegisterController extends Controller
         ]);
         // ini_set('max_execution_time', 120);
         Mail::to('mayahuma9@gmail.com')->send(new NewUserRegistered($user->username)); 
+        $locale = $request->segment(1);
+        $isLocalizedRoute = in_array($locale, config('app.available_locales', ['en', 'ar']));
        if ($request->input('ajax')) {
             $welcomeUrl = $isLocalizedRoute 
                 ? route('welcome', ['locale' => $locale, 'username' => $user->username])

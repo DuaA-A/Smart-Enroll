@@ -83,6 +83,21 @@ i{
     border-color: #f8c0c8;
     box-shadow: 0 0 5px rgba(248, 192, 200, 0.5);
 }
+button{
+    font-size: 15px;
+    background: linear-gradient(135deg, #ebe0d0, #ec9ec0, #ff0080, #a91b60);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+     outline: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 25px ;
+
+}
 
 form .button {
     margin: 5px 0;
@@ -137,12 +152,16 @@ form .button input:hover {
 }
 
 .error-message {
-    color: #e91e63;
+    color: red;
     font-size: 13px;
     margin-top: 5px;
     height: 14px;
 }
-
+.valid-whatsapp{
+   color: green;
+   font-size: 13px;
+   margin-top: 5px;
+}
 
 @media (max-width: 584px) {
     .container {

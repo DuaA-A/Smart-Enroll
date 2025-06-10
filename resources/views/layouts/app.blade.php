@@ -12,7 +12,8 @@
     <div class="main-container">
         @yield('content')
     </div>
-    <script src="{{ asset('../resources/js/api_ops.js') }}"></script>
+    {{-- <script src="{{ asset('../resources/js/api_ops.js') }}"></script> --}}
+    <script src="{{ asset('assests/js/whatsapp_Validation.js') }}"></script>
     @include('layouts.footer')
 </body>
 </html>

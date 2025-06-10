@@ -13,7 +13,7 @@
         /* border-top: 10px solid #ffdde1;  */
         font-size: 14px; 
         letter-spacing: 1px; 
-        position: absolute;
+        position: relative;
         bottom: 0%;
         border-radius: 70% 70% 0% 0%;
         box-shadow: 20px 2px 20px 2px #880e4f;

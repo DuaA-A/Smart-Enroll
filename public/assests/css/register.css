@@ -154,6 +154,7 @@ form .button input:hover {
     font-size: 13px;
     margin-top: 5px;
     height: 14px;
+    margin-bottom: 10px;
 }
 .valid-whatsapp {
     color: green;

@@ -80,15 +80,6 @@
                     <div class="error-message" id="user_image-error">@error('user_image') {{ $message }} @enderror</div>
                 </div>
             </div>
-
-            @if ($errors->any())
-                <div class="server-errors">
-                    @foreach ($errors->all() as $error)
-                        <div class="error-message">{{ $error }}</div>
-                    @endforeach
-                </div>
-            @endif
-
             <div class="button">
                 <input type="submit" value="{{ __('auth.Register') }}">
             </div>

@@ -80,7 +80,7 @@ class UserController extends Controller
             'username' => 'required|string|min:3|max:50|unique:users,username,' . $user->id,
             'email' => 'required|email|max:100|unique:users,email,' . $user->id,
             'phone' => 'required|regex:/^[0-9]{10,}$/',
-            'whatsapp_number' => 'nullable|regex:/^[0-9]{10,}$/',
+            'whatsapp_number' => 'nullable|regex:/^\+[1-9]\d{7,14}$/',
             'address' => 'nullable|string',
             'user_image' => 'nullable|image|max:2048', // Max 2MB
         ]);

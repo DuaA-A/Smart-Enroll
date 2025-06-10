@@ -34,7 +34,7 @@ class RegisterController extends Controller
             'email' => 'required|email|max:100|unique:users',
             'password' => 'required|min:8|regex:/[0-9]/|regex:/[\W_]/|confirmed',
             'phone' => 'required|regex:/^[0-9]{10,}$/',
-            'whatsapp_number' => 'required|string|regex:/^\+[0-9]{10,15}$/',
+            'whatsapp_number' => 'nullable|string|regex:/^\+[1-9]\d{7,14}$/',
             'address' => 'required|string',
             'user_image' => 'required|image|max:2048',
         ]);

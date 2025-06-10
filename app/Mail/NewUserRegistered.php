@@ -38,8 +38,8 @@ class NewUserRegistered extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'new_user',  // اسم ملف الواجهة
-            with: ['username' => $this->username],  // البيانات اللي هنوصلها للواجهة
+            view: 'new_user',  
+            with: ['username' => $this->username],  
         );
     }
 

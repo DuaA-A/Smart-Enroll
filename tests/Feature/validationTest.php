@@ -13,13 +13,16 @@ class ValidationTest extends TestCase
 
     public function test_name_field_is_required()
     {
-        $response = $this->post('/register', [
-            'email' => 'test@example.com',
-            'password' => 'password123',
-            'password_confirmation' => 'password123'
-        ]);
 
-        $response->assertSessionHasErrors('name');
+
+      $response = $this->post('/register', [
+    'email' => 'test@example.com',
+    'password' => 'password123',
+    'password_confirmation' => 'password123'
+]);
+
+$response->assertSessionHasErrors('full_name');
+
     }
 
     public function test_email_field_is_required()

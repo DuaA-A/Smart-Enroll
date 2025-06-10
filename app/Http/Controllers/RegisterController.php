@@ -53,15 +53,18 @@ class RegisterController extends Controller
             'user_image' => $userImagePath,
         ]);
         // ini_set('max_execution_time', 120);
-        // Mail::to('20220271@stud.fci-cu.edu.eg')->send(new NewUserRegistered($user->username)); 
+        Mail::to('mayahuma9@gmail.com')->send(new NewUserRegistered($user->username)); 
         if ($request->input('ajax')) {
             return response()->json([
                 'success' => true,
                 'redirect' => route('welcome', ['username' => $user->username])
             ]);
         }
-        
-        return redirect()->route('welcome', ['username' => $user->username]);
+       //حل مشكلة missing required parameters 
+  return redirect()->route('welcome', [
+    'locale' => app()->getLocale(),
+    'username' => $user->username
+]);
     }
     
     public function welcome($username)

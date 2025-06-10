@@ -173,6 +173,7 @@ value="{{ old('username') }}">
                     <div class="error-message" id="user_image-error">@error('user_image') {{ $message }} @enderror</div>
                 </div>
             </div>
+<<<<<<< HEAD
 >>>>>>> d75aa16e94c890d59dcabbe42e4d0f2e31caec1e
 
 <div class="input-box">
@@ -664,6 +665,8 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 =======
+=======
+>>>>>>> 352084b04eb49b2c7fd98063446759faa62d4b67
             <div class="button">
                 <input type="submit" value="{{ __('auth.Register') }}">
             </div>

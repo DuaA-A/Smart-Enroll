@@ -54,21 +54,33 @@ class RegisterController extends Controller
         ]);
         // ini_set('max_execution_time', 120);
         Mail::to('mayahuma9@gmail.com')->send(new NewUserRegistered($user->username)); 
-        if ($request->input('ajax')) {
+       if ($request->input('ajax')) {
+            $welcomeUrl = $isLocalizedRoute 
+                ? route('welcome', ['locale' => $locale, 'username' => $user->username])
+                : route('welcome', ['username' => $user->username]);
+                
             return response()->json([
                 'success' => true,
-                'redirect' => route('welcome', ['username' => $user->username])
+                'redirect' => $welcomeUrl
             ]);
         }
-       //حل مشكلة missing required parameters 
-  return redirect()->route('welcome', [
-    'locale' => app()->getLocale(),
-    'username' => $user->username
-]);
+        
+        // Redirect based on whether we're in a localized route or not
+        if ($isLocalizedRoute) {
+            return redirect()->route('welcome', ['locale' => $locale, 'username' => $user->username]);
+        } else {
+            return redirect()->route('welcome', ['username' => $user->username]);
+        }
     }
     
-    public function welcome($username)
+    public function welcome($locale = null, $username = null)
     {
+        // Handle both localized and non-localized routes
+        if ($username === null) {
+            $username = $locale;
+            $locale = null;
+        }
+        
         $user = User::where('username', $username)->firstOrFail();
         return view('welcome', compact('user'));
     }

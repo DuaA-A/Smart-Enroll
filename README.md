@@ -11,6 +11,7 @@
       Smart-Enroll is a Laravel-based web application designed as a clean and user-friendly signup form.
       It features advanced validation mechanisms and a polished UI/UX design to ensure a smooth user registration experience.
     </p>
+      <img src="/Screenshot%202025-05-16%20010813.png"/>
   </header>
  <h2>Contributors</h2>
     <ul>

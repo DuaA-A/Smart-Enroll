@@ -5,17 +5,18 @@
 <body>
 
   <header>
-      <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a>
-       <h1>Smart-Enroll</h1></p>
+      <h1>Smart-Enroll</h1>
+            <img src="/Screenshot%202025-05-16%20010813.png"/>      
     <p>
       Smart-Enroll is a Laravel-based web application designed as a clean and user-friendly signup form.
       It features advanced validation mechanisms and a polished UI/UX design to ensure a smooth user registration experience.
     </p>
-      <img src="/Screenshot%202025-05-16%20010813.png"/>
+    <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a>
+       </p>
   </header>
  <h2>Contributors</h2>
     <ul>
-      <li><strong><a href="https://github.com/DuaA-A">Duaa Abd-Elati </a></strong> – Project Lead, Database Designer, Server-Side Validation</li>
+      <li><strong><a href="https://github.com/DuaA-A">Duaa Abd-Elati </a></strong> – Project Lead, Database Designer, Server-Side Validation, UI designer</li>
       <li><strong><a href="https://github.com/NadaBadawy186">Nada Badawy</a></strong> – WhatsApp Number Verification, Multilingual Support</li>
       <li><strong><a href="https://github.com/Roqaia2005">Roqaia Hassan</a></strong> – User Signup Form, Client-Side Validation</li>
       <li><strong><a href="https://github.com/Fatimah3844">Fatemah</a></strong> – Header and Footer</li>
